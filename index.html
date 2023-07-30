@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>BOOK.track</h1>
+        <button id="plus-btn">+</button>
+      </div>
+      <form id="form" style="display: none">
+        <div class="form-row">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Under the dome..."
+          />
+        </div>
+        <div class="form-row">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Stephen King..."
+          />
+        </div>
+        <div class="form-row">
+          <label for="pages">Number of pages</label>
+          <input type="text" name="pages" id="pages" placeholder="234..." />
+        </div>
+        <div class="form-checkbox">
+          <p>Have you read this book?</p>
+          <input type="checkbox" name="read" id="read" />
+        </div>
+        <button type="add">Add book</button>
+      </form>
+    </header>
+
+    <main>
+      <div id="library-container"></div>
+    </main>
+
+    <footer>
+      <div class="avatar">
+        <a href="https://github.com/beMimg"><img src="img/github.svg" /></a>
+      </div>
+      <div class="link">
+        <a href="https://github.com/beMimg">beMimg</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

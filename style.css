@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100vh;
+  font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: var(--theme-color);
+  background-color: #f0f0f0;
+
+  display: grid;
+  grid-template-rows: 2fr 12fr 1fr;
+}
+
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header > :first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-row input {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 250px;
+  padding: 7px;
+}
+
+.form-checkbox {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+}
+
+form button {
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: #202123;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#plus-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  background-color: #202123;
+  border: none;
+  font-size: 2rem;
+}
+
+#library-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  display: grid;
+  border-left: 5px solid #202123;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.332);
+  background-color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: #202123;
+}
+
+footer img {
+  height: 48px;
+  width: 48px;
+  filter: brightness(0) invert(1);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.avatar {
+  display: grid;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.link {
+  display: grid;
+  align-self: center;
+}
