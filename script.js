@@ -1,7 +1,23 @@
 const openFormBtn = document.querySelector("#plus-btn");
 const form = document.querySelector("#form");
+const libraryContainer = document.querySelector("#library-container");
 
 let myLibrary = [];
+
+openFormBtn.addEventListener("click", function () {
+  if (form.style.display === "none") {
+    form.style.display = "flex";
+    openFormBtn.innerHTML = "-";
+  } else {
+    form.style.display = "none";
+    openFormBtn.innerHTML = "+";
+  }
+});
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  addBookToLibrary();
+});
 
 function Book(title, author, pages, read) {
   this.title = title;
@@ -18,19 +34,6 @@ function addBookToLibrary() {
 
   let newBook = new Book(title, author, pages, read);
   myLibrary.push(newBook);
+  console.log(myLibrary);
+  displayLibrary();
 }
-
-openFormBtn.addEventListener("click", function () {
-  if (form.style.display === "none") {
-    form.style.display = "flex";
-    openFormBtn.innerHTML = "-";
-  } else {
-    form.style.display = "none";
-    openFormBtn.innerHTML = "+";
-  }
-});
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  addBookToLibrary();
-});
