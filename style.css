@@ -82,13 +82,12 @@ form button {
 }
 
 .book-card {
-  display: flex;
-  justify-content: space-between;
   border-left: 5px solid #202123;
   padding: 5px;
   border-radius: 10px;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.332);
   background-color: white;
+  font-size: 1.2rem;
 }
 
 #remove-btn {
@@ -103,6 +102,22 @@ form button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
+}
+
+.book-card > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#toggle-read-btn {
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #202123;
+  border: none;
+  font-size: 1.1rem;
 }
 
 footer {
