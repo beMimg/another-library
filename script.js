@@ -10,7 +10,15 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
-function addBookToLibrart() {}
+function addBookToLibrary() {
+  let title = document.querySelector("#title").value;
+  let author = document.querySelector("#author").value;
+  let pages = document.querySelector("#pages").value;
+  let read = document.querySelector("#read").checked;
+
+  let newBook = new Book(title, author, pages, read);
+  myLibrary.push(newBook);
+}
 
 openFormBtn.addEventListener("click", function () {
   if (form.style.display === "none") {
@@ -20,4 +28,9 @@ openFormBtn.addEventListener("click", function () {
     form.style.display = "none";
     openFormBtn.innerHTML = "+";
   }
+});
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  addBookToLibrary();
 });
