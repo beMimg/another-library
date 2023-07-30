@@ -37,3 +37,24 @@ function addBookToLibrary() {
   console.log(myLibrary);
   displayLibrary();
 }
+
+function displayLibrary() {
+  libraryContainer.innerHTML = "";
+  for (let i = 0; i < myLibrary.length; i++) {
+    let book = myLibrary[i];
+    let bookCard = document.createElement("div");
+    bookCard.setAttribute("class", "book-card");
+    bookCard.innerHTML = `
+    <div>
+      <p>Title: ${book.title}</p>
+      <p>Author: ${book.author}</p>
+      <p>Pages: ${book.pages}</p>
+      <p>${book.read ? "Read" : "Not read"}</p>
+    </div>
+    <div>
+      <button id="remove-btn">X</button>
+    </div>`;
+
+    libraryContainer.appendChild(bookCard);
+  }
+}
