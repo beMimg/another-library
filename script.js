@@ -34,7 +34,6 @@ function addBookToLibrary() {
 
   let newBook = new Book(title, author, pages, read);
   myLibrary.push(newBook);
-  console.log(myLibrary);
   displayLibrary();
 }
 
@@ -51,10 +50,13 @@ function displayLibrary() {
       <p>Pages: ${book.pages}</p>
       <p>${book.read ? "Read" : "Not read"}</p>
     </div>
-    <div>
-      <button id="remove-btn">X</button>
-    </div>`;
+    <button id="remove-btn" onclick="removeBook(${i})">X</button`;
 
     libraryContainer.appendChild(bookCard);
   }
+}
+
+function removeBook(index) {
+  myLibrary.splice(index, 1);
+  displayLibrary();
 }
