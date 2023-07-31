@@ -19,16 +19,24 @@ header {
   display: grid;
 }
 
-header > :first-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-self: center;
   gap: 20px;
 }
 
 header img {
   height: 50px;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+
+#header-title {
+  display: grid;
+  align-self: center;
+  justify-self: center;
 }
 
 #plus-btn {
