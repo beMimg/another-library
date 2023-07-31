@@ -16,6 +16,7 @@ body {
 
 header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: grid;
 }
 
 header > :first-child {
@@ -135,6 +136,7 @@ footer img {
   height: 48px;
   width: 48px;
   filter: brightness(0) invert(1);
+  display: grid;
 }
 
 footer a {
