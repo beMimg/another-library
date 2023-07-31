@@ -1,4 +1,4 @@
-const openFormBtn = document.querySelector("#plus-btn");
+const openFormBtn = document.querySelector("#open-form");
 const form = document.querySelector("#form");
 const libraryContainer = document.querySelector("#library-container");
 
@@ -7,10 +7,10 @@ let myLibrary = [];
 openFormBtn.addEventListener("click", function () {
   if (form.style.display === "none") {
     form.style.display = "flex";
-    openFormBtn.innerHTML = "-";
+    openFormBtn.innerHTML = '<img src="img/minus-circle.svg"/>';
   } else {
     form.style.display = "none";
-    openFormBtn.innerHTML = "+";
+    openFormBtn.innerHTML = '<img src="img/plus-circle.svg"/>';
   }
 });
 
