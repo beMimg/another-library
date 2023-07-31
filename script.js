@@ -17,6 +17,7 @@ openFormBtn.addEventListener("click", function () {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   addBookToLibrary();
+  form.reset();
 });
 
 function Book(title, author, pages, read) {
