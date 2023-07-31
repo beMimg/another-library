@@ -32,6 +32,8 @@ header img {
   display: grid;
   align-self: center;
   justify-self: center;
+  cursor: pointer;
+  padding: 5px;
 }
 
 #header-title {
@@ -40,9 +42,14 @@ header img {
   justify-self: center;
 }
 
-#open-form {
-  border: 0;
+header button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: #f0f0f0;
 }
+
 form {
   flex-direction: column;
   align-items: center;
