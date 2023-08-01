@@ -1,4 +1,4 @@
-Welcome to the BOOK.track - librart project! This library management web application allows you to organize and keep track of the books you have read and want to read. You can easily add, remove, and manage your book collection using this user-friendly interface.
+Welcome to the BOOK.track - Librart project! This library management web application allows you to organize and keep track of the books you have read and want to read. You can easily add, remove, and manage your book collection using this user-friendly interface.
 
 Features
 Add Books: Keep a record of books you've read or books you want to read in the future. Enter book details like title, author, genre, and cover image.
