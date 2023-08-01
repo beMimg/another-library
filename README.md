@@ -8,7 +8,7 @@ Remove Books: Have you finished a book or changed your mind about reading it? No
 Responsive Design: Enjoy using the BOOK.track - Library on various devices, as it is designed to be responsive and adaptable to different screen sizes.
 
 Live Demo
-Experience the BOOK.track - Library live by visiting the live page.
+Experience the BOOK.track - Library live by visiting https://bemimg.github.io/library/.
 
 Technologies Used
 The BOOK.track - Library is primarily built using the following technologies:
