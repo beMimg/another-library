@@ -17,4 +17,4 @@ CSS (36%)
 HTML (23%)
 
 Feedback and Support
-If you encounter any issues while using the BOOK.track - Libraru or have any questions, feel free to create an issue. We value your feedback and will do our best to provide support.
+If you encounter any issues while using the BOOK.track - Library or have any questions, feel free to create an issue. We value your feedback and will do our best to provide support.
